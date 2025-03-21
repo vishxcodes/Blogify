@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/head") %>
+    <title>Home Page</title>
+</head>
+<body>
+    <%- include("./partials/nav") %>
+    <div class="container mt-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4"> 
+            
+            <form action="/user/verifyOTP" method="post">
+                <div class="container mt-4">
+                        <div class="mb-3">
+                            <label for="otp" class="form-label">Enter the Valid OTP</label>
+                            <input type="text" name="otp" class="form-control" id="otp" aria-describedby="emailHelp">
+                            <div class="container mt-4">
+                            <button type="submit" class="btn btn-primary">Reset Password</button>
+                        </div>
+        </div>
+    </div>
+    <%- include("./partials/script") %>
+</body>
+</html>
